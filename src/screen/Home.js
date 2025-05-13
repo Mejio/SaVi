@@ -1,6 +1,6 @@
 import { View, Text, StyleSheet } from "react-native";
 import Map from "../components/Map";
-import SOSButton from "../components/SOSButton";
+import SOSButton from "../components/SOSbutton";
 import Tracker from "../components/Tracker";
 
 const Home = () => {
