@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { View, TextInput, Text, StyleSheet } from "react-native";
-import { Button } from "react-native-elements";
+import { Button } from "@rneui/themed";
 import { auth } from "../services/firebase";
 import { signInWithEmailAndPassword } from "@react-native-firebase/auth";
 import { useNavigation } from "@react-navigation/native";
