@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1064534235427",
+    "project_id": "savi-c8739",
+    "storage_bucket": "savi-c8739.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1064534235427:android:5f868f439bfc8fae5b9496",
+        "android_client_info": {
+          "package_name": "com.savi.SaVi"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBK09wrb-tvkQIHz6y79J55hBzpXZwyYkk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
