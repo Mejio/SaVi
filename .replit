@@ -21,7 +21,7 @@ mode = "sequential"
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"
-args = "EXPO_PACKAGER_PROXY_URL=https://$REPLIT_DEV_DOMAIN REACT_NATIVE_PACKAGER_HOSTNAME=$REPLIT_DEV_DOMAIN npx expo start"
+args = "EXPO_PACKAGER_PROXY_URL=https://$REPLIT_DEV_DOMAIN REACT_NATIVE_PACKAGER_HOSTNAME=$REPLIT_DEV_DOMAIN npx expo start --clear"
 
 [[workflows.workflow]]
 name = "EAS Init"
@@ -56,15 +56,6 @@ task = "shell.exec"
 args = "npx eas build --platform android --profile preview"
 
 [[workflows.workflow]]
-name = "Install Dependencies"
-author = 37423762
-mode = "sequential"
-
-[[workflows.workflow.tasks]]
-task = "shell.exec"
-args = "npm install @rneui/themed @rneui/base react-native-elements expo@~52.0.46 expo-constants@~17.0.8 expo-font@~13.0.4 expo-router@~4.0.21 expo-splash-screen@~0.29.24 expo-system-ui@~4.0.9 expo-updates@~0.27.4 react-native@0.76.9 jest-expo@~52.0.6"
-
-[[workflows.workflow]]
 name = "Reset Dependencies"
 author = 37423762
 mode = "sequential"
@@ -89,3 +80,12 @@ args = "rm -rf node_modules package-lock.json"
 [[workflows.workflow.tasks]]
 task = "shell.exec"
 args = "npm cache clean --force"
+
+[[workflows.workflow]]
+name = "Install Dependencies"
+mode = "sequential"
+author = 36846440
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "npx expo install firebase"
